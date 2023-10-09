@@ -1,0 +1,103 @@
+{
+  // editor
+  "editor.fontSize": 14,
+  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.largeFileOptimizations": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorBlinking": "expand",
+
+  // files
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+
+  // terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "JetBrains Mono, Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.scrollback": 50000,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+
+  // explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // workbench
+  "workbench.colorCustomizations": {
+    // terminal
+    "terminal.background": "#000000",
+    "terminal.foreground": "#bbbbbb",
+
+    // statusBar
+    "statusBar.background": "#414141",
+    "statusBar.noFolderBackground": "#414141",
+
+    // titleBar
+    "titleBar.activeBackground": "#414141"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.commandPalette.preserveInput": true,
+  "workbench.list.horizontalScrolling": true,
+  "workbench.view.alwaysShowHeaderActions": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "Darcula Theme from IntelliJ",
+
+  // security
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // json
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "breadcrumbs.enabled": true,
+
+  // Docker
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+
+  // audioCues
+  "audioCues.lineHasBreakpoint": "off",
+  "audioCues.lineHasError": "off",
+  "audioCues.lineHasFoldedArea": "off",
+  "audioCues.lineHasInlineSuggestion": "off",
+  "audioCues.noInlayHints": "off",
+  "audioCues.onDebugBreak": "off",
+
+  // Go
+  "[go]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "go.useLanguageServer": true,
+  "go.alternateTools": {
+    "go-langserver": "gopls"
+  },
+  "go.toolsEnvVars": { "GO111MODULE": "on" },
+  "gopls": {
+    "usePlaceholders": false,
+    "enhancedHover": false
+  },
+}
