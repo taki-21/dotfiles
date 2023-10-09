@@ -99,5 +99,5 @@
   "gopls": {
     "usePlaceholders": false,
     "enhancedHover": false
-  },
+  }
 }
