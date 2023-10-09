@@ -4,5 +4,3 @@
 	branch = false
 [init]
 	defaultBranch = main
-[user]
-	useConfigOnly = true
