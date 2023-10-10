@@ -1,0 +1,29 @@
+add_newline = false
+
+format = """
+$directory\
+$git_branch\
+$git_commit\
+$git_status\
+$git_state\
+$character\
+"""
+
+[directory]
+truncation_length = 1
+style = 'cyan'
+
+[git_branch]
+format = '[$branch(:$remote_branch)]($style) '
+style = 'green'
+
+[git_status]
+style = 'green'
+format = '([$all_status$ahead_behind]($style) )'
+
+[character]
+success_symbol = '[\$](white)'
+error_symbol = '[\$](white)'
+
+[line_break]
+disabled = true
