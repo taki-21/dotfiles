@@ -40,7 +40,7 @@
 
   // workbench
   "workbench.colorCustomizations": {
-    // terminal
+    // terminal(ref: https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/vscode/Builtin%20Tango%20Dark.json)
     "terminal.background": "#000000",
     "terminal.foreground": "#dbded8",
     "terminal.ansiBlack": "#000000",
