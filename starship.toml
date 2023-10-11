@@ -1,4 +1,5 @@
 add_newline = false
+command_timeout=5000
 
 format = """
 $directory\
@@ -6,6 +7,7 @@ $git_branch\
 $git_commit\
 $git_status\
 $git_state\
+$kubernetes\
 $character\
 """
 
@@ -14,7 +16,7 @@ truncation_length = 1
 style = 'cyan'
 
 [git_branch]
-format = '[$branch(:$remote_branch)]($style) '
+format = '[$symbol$branch(:$remote_branch)]($style) '
 style = 'green'
 
 [git_status]
@@ -27,3 +29,8 @@ error_symbol = '[\$](white)'
 
 [line_break]
 disabled = true
+
+[kubernetes]
+disabled = false
+style = 'blue'
+format = '[$symbol$namespace]($style) '
