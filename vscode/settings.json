@@ -42,7 +42,7 @@
   "workbench.colorCustomizations": {
     // terminal(iTerm2 "Tango Dark")
     "terminal.background": "#000000",
-    "terminal.foreground": "#fffeff",
+    "terminal.foreground": "#dbded8",
     "terminal.ansiBlack": "#000000",
     "terminal.ansiBlue": "#417ab3",
     "terminal.ansiCyan": "#00a7aa",
@@ -61,7 +61,7 @@
     "terminal.ansiBrightYellow": "#fcea60",
     "terminal.selectionBackground": "#c1ddff",
     "terminal.selectionForeground": "#000000",
-    "terminalCursor.foreground": "#fffeff",
+    "terminalCursor.foreground": "#dbded8",
 
     // statusBar
     "statusBar.background": "#414141",
