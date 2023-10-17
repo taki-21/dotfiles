@@ -29,3 +29,11 @@ eval "$(starship init zsh)"
 
 # zsh-autosuggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# git completions
+fpath=(
+  ${HOME}/.zsh/completions
+  ${fpath}
+)
+autoload -Uz compinit
+compinit
