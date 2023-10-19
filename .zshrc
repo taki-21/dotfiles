@@ -23,7 +23,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # ripgrep
-alias rg="rg --hidden"
+alias rg="rg --hidden --ignore-case"
 
 eval "$(starship init zsh)"
 
