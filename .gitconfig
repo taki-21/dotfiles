@@ -4,3 +4,13 @@
 	branch = false
 [init]
 	defaultBranch = main
+[alias]
+	b = branch
+	s = status
+	cm = commit --message
+	cam = commit --amend --message
+	empty = commit --allow-empty --message 'empty'
+	difff = diff --relative --name-only
+	diffh = diff --histogram
+	diffw = diff --histogram --word-diff --word-diff-regex='\\w+|[^[:space:]]'
+	logo = log --oneline -n 10
