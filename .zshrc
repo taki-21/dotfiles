@@ -5,6 +5,7 @@ alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
 alias zshconfig="vim ~/.zshrc"
+alias g='git'
 alias gg="git grep -In"
 
 # Use Git provided by Homebrew
