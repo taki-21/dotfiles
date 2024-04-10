@@ -8,7 +8,7 @@
 	b = branch
 	s = status
 	cm = commit --message
-	acm = commit --message --all
+	acm = commit --all --message
 	cam = commit --amend --message
 	empty = commit --allow-empty --message 'empty'
 	difff = diff --relative --name-only
