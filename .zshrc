@@ -25,7 +25,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # ripgrep
-alias rg="rg --hidden --ignore-case --color always --no-heading -n --sort path"
+alias rg="rg --hidden --ignore-case --color always --no-heading --line-number"
 
 eval "$(starship init zsh)"
 

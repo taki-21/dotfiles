@@ -7,9 +7,13 @@
 [alias]
 	b = branch
 	s = status
+	a = add
 	cm = commit --message
 	acm = commit --all --message
 	cam = commit --amend --message
+	co = checkout
+	sw = switch
+	swc = switch --create
 	empty = commit --allow-empty --message 'empty'
 	difff = diff --relative --name-only
 	diffh = diff --histogram
