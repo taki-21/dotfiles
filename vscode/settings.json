@@ -13,6 +13,24 @@
   "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.cursorBlinking": "expand",
+  "editor.minimap.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["variable.other", "variable.other.property"],
+        "settings": {
+          "foreground": "#A9B7C6" // 白色
+        }
+      },
+      {
+        "scope": ["keyword"],
+        "settings": {
+          "foreground": "#CC7832",
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
 
   // files
   "files.autoSave": "afterDelay",
@@ -40,7 +58,6 @@
 
   // workbench
   "workbench.colorCustomizations": {
-    // terminal(iTerm2 "Tango Dark")
     "terminal.background": "#000000",
     "terminal.foreground": "#dbded8",
     "terminal.ansiBlack": "#000000",
@@ -68,14 +85,17 @@
     "statusBar.noFolderBackground": "#414141",
 
     // titleBar
-    "titleBar.activeBackground": "#414141"
+    "titleBar.activeBackground": "#414141",
+
+    // activityBarBadge
+    "activityBarBadge.background": "#287739",
+    "activityBarBadge.foreground": "#ffffff"
   },
   "workbench.startupEditor": "newUntitledFile",
   "workbench.commandPalette.preserveInput": true,
   "workbench.list.horizontalScrolling": true,
   "workbench.view.alwaysShowHeaderActions": true,
   "workbench.editor.enablePreview": false,
-  "workbench.colorTheme": "Darcula Theme from IntelliJ",
 
   // security
   "security.workspace.trust.untrustedFiles": "open",
@@ -91,14 +111,6 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-
-  // audioCues
-  "audioCues.lineHasBreakpoint": "off",
-  "audioCues.lineHasError": "off",
-  "audioCues.lineHasFoldedArea": "off",
-  "audioCues.lineHasInlineSuggestion": "off",
-  "audioCues.noInlayHints": "off",
-  "audioCues.onDebugBreak": "off",
 
   // Go
   "[go]": {
@@ -131,5 +143,24 @@
     "files.trimFinalNewlines": true,
     "editor.rulers": [120],
     "editor.semanticHighlighting.enabled": true
-  }
+  },
+  "accessibility.signals.lineHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasFoldedArea": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasBreakpoint": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+  "accessibility.signals.onDebugBreak": {
+    "sound": "off"
+  },
+  "accessibility.signals.noInlayHints": {
+    "sound": "off"
+  },
+  "workbench.colorTheme": "Webstorm IntelliJ Darcula Theme"
 }
