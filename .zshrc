@@ -7,6 +7,8 @@ alias view="nvim -R"
 alias zshconfig="vim ~/.zshrc"
 alias g='git'
 alias gg="git grep -In"
+alias k='kubectl'
+alias kn='kubens'
 
 # Use Git provided by Homebrew
 export PATH=/usr/local/bin/git:$PATH
@@ -43,3 +45,10 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
+
+function awssso () {
+  aws sso login --sso-session shirushi
+	$(cat ~/.aws/config| grep "\[profile" | sed -r -e 's/\[profile (.*)\]/\1/' | fzf | xargs -I{} bash -c "echo export AWS_PROFILE={}")
+}
+source <(kubectl completion zsh)
